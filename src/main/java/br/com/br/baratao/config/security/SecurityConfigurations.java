@@ -64,6 +64,8 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 		.antMatchers(HttpMethod.GET, "/topicos").permitAll()
 		.antMatchers(HttpMethod.GET, "/topicos/*").permitAll()
+		.antMatchers(HttpMethod.GET, "/usuario").permitAll()
+		.antMatchers(HttpMethod.GET, "/usuario/*").permitAll()
 		.antMatchers(HttpMethod.POST, "/auth").permitAll() // Diz o método que quer liberar
 //		.antMatchers(HttpMethod.GET, "/peca").permitAll()
 //		.antMatchers(HttpMethod.GET, "/peca/*").permitAll() // Diz o caminho e o método com parâmetro
